@@ -1,1 +1,1 @@
-# eShop
+# e-shop
