@@ -19,11 +19,16 @@
     body {
             background-color: rgb(239, 239, 239);
         }
+        .dropdown-item{
+    color: rgb(255, 255, 255);
+   }
+   .dropdown-item:hover{
+    color: rgb(7, 0, 0);
+   }
     .card img {
       width: 100px;
       border:2px solid rgba(255, 174, 0, 0.4);
     }
-   
     .quantite input{
       width: 30%;
       text-align: center;
@@ -57,58 +62,63 @@
 </head>
 
 <body>
+  <header>
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <nav class="navbar navbar-expand-lg bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Mode</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./searchProduct.html">Casques</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./searchProduct.html">Systèmes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./searchProduct.html">Equipements</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Catégories
-                  </a>
-                  <ul class="dropdown-menu bg-dark">
-                    <li><a class="dropdown-item text-white" href="#">Casques</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Hifi</a></li>
+            <!-- navBar -->
+            <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark ">
+              <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Mode</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="./searchProduct.html">Casques</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="./searchProduct.html">Systèmes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="./searchProduct.html">Equipements</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Catégories
+                      </a>
+                      <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item " href="#">Casques</a></li>
+                        <li><a class="dropdown-item " href="#">Hifi</a></li>
+                      </ul>
+                    </li>
                   </ul>
-                </li>
-              </ul>  
-              <div class="d-flex flex-row align-items-center">
-                <a href="./formSignUP.html" class="btn btn-outline-primary text-white mx-2">
-                  <i class="fa-solid fa-user" style="color: white;"></i> Compte
-                </a>
-                <a href="./panier.html" class="btn btn-outline-primary text-white mx-2">
-                  <i class="fa-solid fa-cart-plus" style="color: white;"></i> Panier
-                </a>
+  
+                  <div class="d-flex flex-row align-items-center">
+                    <a href="./signUP.html" class="btn btn-outline-primary text-white mx-2">
+                      <i class="fa-solid fa-user" style="color: white;"></i> Compte
+                    </a>
+                    <a href="./cartShoping.html" class="btn btn-outline-primary text-white mx-2">
+                      <i class="fa-solid fa-cart-plus" style="color: white;"></i> Panier
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </nav>
+            </nav>
+            <!-- end navBar -->
+      </header>
 
         <div class="container-fluid container-md">
           <div class="row m-2 p-3">
             <h1 class="text-center m-3">Mon panier</h1>
-        
+        <!-- colonne gauche articles -->
             <div class="col-md-9 col-sm-12 ">
               <div class="row p-1">
                 <div class="col-4">
@@ -149,7 +159,9 @@
                 <hr class="w-100 m-2" style="border: 1px solid rgb(20, 157, 16);">
               </div>
             </div>
-        
+            <!-- end colonne gauche articles -->
+
+         <!-- colonne droite total -->
             <div class="col-md-3 col-sm-12  ">
               <div class="card border border-secondary alert alert-secondary p-1 " style="width: 100%; border: none;">
                 <div class="card-body">
@@ -158,16 +170,19 @@
                 </div>
               </div>
             </div>
-        
+        <!-- end colonne droite total -->
           </div>
         </div>
         
       </div>
     </div>
   </div>
-  
+    <!-- end colonne droite total -->
+
+   
   <div class="container contact">
     <div class="row m-4">
+       <!-- colonne adresse -->
       <div class="col-4 adress justify-content-center ">
         <h3>Adresse</h3>
         <p class="mx-3 my-0 mt-3">127 rue de Paris, 75001 Paris, France</p>
@@ -180,7 +195,7 @@
           <p class="mx-3 my-0">contact@exemple.fr</p>
         </div>
       </div>
-
+<!-- end colonne adresse -->
       <div class="col-4 plan">
         <h3>Nous trouver</h3>
         <iframe
@@ -210,7 +225,6 @@
       <div class="col">
         <p class="text-center fs-6">© 2024 votre entreprise, Touts droits réservés</p>
       </div>
-
     </div>
   </div>
     </div>
