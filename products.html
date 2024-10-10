@@ -19,8 +19,12 @@
     body {
       background-color: rgb(239, 239, 239);
     }
-    .card img {
-      width: 400px;
+    
+    img {
+      width: 100%;
+    }
+    li{
+      font-size: 20px;
     }
     .contact {
       border-bottom: 2px solid rgba(255, 174, 0, 0.4);
@@ -33,27 +37,29 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col">
-
-        <div class="card d-flex flex-row mt-4" style=" border:none;">
-          <img src="./ressources/prod2.jpg" class="product-img" alt="Product Image">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h5 class="card-title mb-2">Casque Audiotechnica</h5>
-            <p class="card-text fs-5 m-0 p-0">Prix: 129,99€</p>
-            <div class="mt-3">
-              <h6>taille disponible:</h6>
-              <ul>
-                <li>Small</li>
-                <li>Medium</li>
-                <li>Large</li>
-              </ul>
+    <div class="row px-4 mb-3">
+      <div class="col-4 mt-4 "> 
+          <img src="./ressources/prod2.jpg" class="" alt="Product Image"> 
             </div>
-            <a href="#" class="btn btn-outline-success mx-3">Ajouter au panier</a>
+      <div class="col-4 mt-4">
+        <div class=" d-flex flex-column align-items-start ">
+          <h3 class=" mb-2">Casque Audiotechnica</h3>
+          <p class=" fs-4 m-0 p-0"><strong>Prix: 129,99€</strong></p>
+          <div class="mt-3">
+            <h4>taille disponible:</h4>
+            <ul>
+              <li>Small</li>
+              <li>Medium</li>
+              <li>Large</li>
+            </ul>
           </div>
+          <a href="#" class="btn btn-outline-success mx-3">Ajouter au panier</a>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="container contact">
+        <div class="container contact mt-5">
           <div class="row m-4">
             <div class="col-4  justify-content-center ">
               <h3>Adresse</h3>
