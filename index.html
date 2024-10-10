@@ -53,33 +53,41 @@
       .navbar-toggler {
         background-color: white;
       }
-      .col-6{
+
+      .col-6 {
         width: 60%;
         padding: 0;
         margin: 0;
       }
-      .other{
+
+      .other {
         padding: 0;
         margin: 0;
         width: 40%;
-        
+
       }
-      .new{
+
+      .new {
         width: 100%;
       }
-      .contaner contact{
+
+      .contaner contact {
         width: 100%;
       }
-      .adress, .plan{
+
+      .adress,
+      .plan {
         padding: 0;
         width: 50%;
         justify-content: space-between;
         margin: 0 auto;
       }
-      iframe{
+
+      iframe {
         width: 100%;
       }
-      .joinUs{
+
+      .joinUs {
         margin-top: 10%;
         text-align: center;
         width: 100%;
@@ -93,54 +101,58 @@
     <div class="row">
       <div class="col">
 
+        <header>
+          <!-- navBar -->
+          <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">Mode</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./searchProduct.html">Casques</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./searchProduct.html">Systèmes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./searchProduct.html">Equipements</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Catégories
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item text-white" href="#">Casques</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Hifi</a></li>
+                    </ul>
+                  </li>
+                </ul>
 
-        <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark ">
-          <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Mode</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./searchProduct.html">Casques</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./searchProduct.html">Systèmes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./searchProduct.html">Equipements</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Catégories
+                <div class="d-flex flex-row align-items-center">
+                  <a href="./signUP.html" class="btn btn-outline-primary text-white mx-2">
+                    <i class="fa-solid fa-user" style="color: white;"></i> Compte
                   </a>
-                  <ul class="dropdown-menu bg-dark">
-                    <li><a class="dropdown-item text-white" href="#">Casques</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Hifi</a></li>
-                  </ul>
-                </li>
-              </ul>
-
-              <div class="d-flex flex-row align-items-center">
-                <a href="./signUP.html" class="btn btn-outline-primary text-white mx-2">
-                  <i class="fa-solid fa-user" style="color: white;"></i> Compte
-                </a>
-                <a href="./cartShoping.html" class="btn btn-outline-primary text-white mx-2">
-                  <i class="fa-solid fa-cart-plus" style="color: white;"></i> Panier
-                </a>
+                  <a href="./cartShoping.html" class="btn btn-outline-primary text-white mx-2">
+                    <i class="fa-solid fa-cart-plus" style="color: white;"></i> Panier
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+          <!-- end navBar -->
+        </header>
 
 
+        <!-- carousel -->
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -172,67 +184,76 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <!-- end carousel -->
 
       </div>
     </div>
   </div>
 
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-6 mb-3">
-        <div class="card text-center m-3 rounded">
-          <img src="./ressources/imgProd.jpg" class="card-img-top" alt="..." style="width: 100%">
-          <div class="card-body">
-            <a href="./products.html" class="btn border-black ">New-Arrivals</a>
+  <main>
+    <div class="container mt-4">
+      <div class="row">
+        <!-- col gauche article -->
+        <div class="col-6 mb-3">
+          <div class="card text-center m-3 rounded">
+            <img src="./ressources/imgProd.jpg" class="card-img-top" alt="..." style="width: 100%">
+            <div class="card-body">
+              <a href="./products.html" class="btn border-black ">New-Arrivals</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-3 other">
-        <div class="card text-center m-3 rounded ">
-          <img src="./ressources/prod1.jpg" class="card-img-top" alt="...">
-          <div class="card-body m-1 p-0 ">
-            <a href="./products.html" class=" ">New-Arrivals</a>
+        <!-- col milieu article -->
+        <div class="col-3 other">
+          <div class="card text-center m-3 rounded ">
+            <img src="./ressources/prod1.jpg" class="card-img-top" alt="...">
+            <div class="card-body m-1 p-0 ">
+              <a href="./products.html" class=" ">New-Arrivals</a>
+            </div>
+          </div>
+          <div class="card text-center m-3 rounded">
+            <img src="./ressources/prod2.jpg" class="card-img-top" alt="...">
+            <div class="card-body m-1 p-0 ">
+              <a href="./products.html" class=" ">New-Arrivals</a>
+            </div>
+          </div>
+          <div class="card text-center m-3 rounded">
+            <img src="./ressources/prod3.jpg" class="card-img-top" alt="...">
+            <div class="card-body m-1 p-0 ">
+              <a href="./products.html" class="">New-Arrivals</a>
+            </div>
           </div>
         </div>
-        <div class="card text-center m-3 rounded">
-          <img src="./ressources/prod2.jpg" class="card-img-top" alt="...">
-          <div class="card-body m-1 p-0 ">
-            <a href="./products.html" class=" ">New-Arrivals</a>
+        <!-- col droite article -->
+        <div class="col-3 new">
+          <div class="card text-center m-3">
+            <img src="./ressources/imgCover3.jpg" class="card-img-top" alt="...">
+            <div class="card-body m-1 p-0 ">
+              <a href="./products.html" class=" ">New-Arrivals</a>
+            </div>
           </div>
-        </div>
-        <div class="card text-center m-3 rounded">
-          <img src="./ressources/prod3.jpg" class="card-img-top" alt="...">
-          <div class="card-body m-1 p-0 ">
-            <a href="./products.html" class="">New-Arrivals</a>
+          <div class="card text-center m-3">
+            <img src="./ressources/prod4.jpg" class="card-img-top" alt="...">
+            <div class="card-body m-1 p-0 ">
+              <a href="./products.html" class=" ">New-Arrivals</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-3 new">
-        <div class="card text-center m-3">
-          <img src="./ressources/imgCover3.jpg" class="card-img-top" alt="...">
-          <div class="card-body m-1 p-0 ">
-            <a href="./products.html" class=" ">New-Arrivals</a>
-          </div>
-        </div>
-        <div class="card text-center m-3">
-          <img src="./ressources/prod4.jpg" class="card-img-top" alt="...">
-          <div class="card-body m-1 p-0 ">
-            <a href="./products.html" class=" ">New-Arrivals</a>
-          </div>
-        </div>
-        <div class="card text-center m-3">
-          <img src="./ressources/prod3.jpg" class="card-img-top" alt="...">
-          <div class="card-body m-1 p-0 ">
+          <div class="card text-center m-3">
+            <img src="./ressources/prod3.jpg" class="card-img-top" alt="...">
+            <div class="card-body m-1 p-0 ">
 
-            <a href="./products.html" class=" ">New-Arrivals</a>
+              <a href="./products.html" class=" ">New-Arrivals</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
+
+  <!-- contact section -->
   <div class="container contact">
     <div class="row m-4">
+      <!-- col gauche adress -->
       <div class="col-4 adress justify-content-center ">
         <h3>Adresse</h3>
         <p class="mx-3 my-0 mt-3">127 rue de Paris, 75001 Paris, France</p>
@@ -245,7 +266,7 @@
           <p class="mx-3 my-0">contact@exemple.fr</p>
         </div>
       </div>
-
+      <!-- col gauche plan -->
       <div class="col-4 plan">
         <h3>Nous trouver</h3>
         <iframe
@@ -253,8 +274,9 @@
           width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        
+
       </div>
+      <!-- col gauche plan -->
       <div class="col-4 joinUs">
         <h3>Restez connecté</h3>
         <p>Suivez nous sur nos reseaux sociaux</p>
@@ -270,20 +292,17 @@
       </div>
     </div>
   </div>
-  <div class="container footer mt-3 mb-3">
-    <div class="row">
-      <div class="col">
-        <p class="text-center fs-6">© 2024 votre entreprise, Touts droits réservés</p>
+
+  
+  <footer>
+    <div class="container footer mt-3 mb-3">
+      <div class="row">
+        <div class="col">
+          <p class="text-center fs-6">© 2024 votre entreprise, Touts droits réservés</p>
+        </div>
       </div>
-
-
     </div>
-  </div>
-
-
-
-
-
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
